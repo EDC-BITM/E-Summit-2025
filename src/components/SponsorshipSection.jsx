@@ -39,7 +39,7 @@ const SponsorshipSection = () => {
         </div>
 
         {/* Prime Sponsors */}
-        <div className="mb-16">
+        <div className="my-16">
           <h3 className="text-lg md:text-xl font-medium text-white text-center mb-8">
             Prime Sponsor
           </h3>
@@ -77,7 +77,7 @@ const SponsorshipSection = () => {
         </div>
 
         {/* Food and Anime Partners Section */}
-        <div className="mb-16">
+        <div className="my-16">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Food Partner */}
             <div className="flex flex-col items-center">
