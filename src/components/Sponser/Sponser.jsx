@@ -72,7 +72,7 @@ function PastSponsors() {
             <div className='h-40 w-40 flex justify-center items-center bg-white rounded'>
               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTrEfVcpVCq0lWB0CmMYyM8KBHlxJy1n9RVQ&s" />
             </div>
-            <div className='h-40 w-40 flex justify-center items-center bg-white rounded'>
+            <div className='h-40 w-40 flex justify-center items-center bg-white rounded mr-6'>
               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZShoVBhCZoflB-I35i_BsVH9Lexeanbbq2Q&s" />
             </div>
           </div>
