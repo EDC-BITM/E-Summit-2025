@@ -153,19 +153,19 @@ const ContactUs = () => {
               <h3 className="text-2xl font-semibold mb-4">Follow Us</h3>
               <div className="flex space-x-4">
                 <a
-                  href="https://www.facebook.com/edcbitmesra/"
+                  href="https://www.facebook.com/edcbitmesra/" target="_blank" rel="noreferrer"
                   className="w-12 h-12 flex justify-center items-center text-primaryGreen rounded-lg hover:text-secondaryGreen bg-[#303030] transition"
                 >
                   <FaFacebookF size={20} />
                 </a>
                 <a
-                  href="https://www.instagram.com/edcbitmesra/"
+                  href="https://www.instagram.com/edcbitmesra/" target="_blank" rel="noreferrer"
                   className="w-12 h-12 flex justify-center items-center bg-[#303030] rounded-lg text-primaryGreen hover:text-secondaryGreen  transition"
                 >
                   <FaInstagram size={20} />
                 </a>
                 <a
-                  href="https://in.linkedin.com/company/edcbitmesra"
+                  href="https://in.linkedin.com/company/edcbitmesra" target="_blank" rel="noreferrer"
                   className="w-12 h-12 flex justify-center items-center bg-[#303030] text-primaryGreen rounded-lg hover:text-secondaryGreen hover:border-primaryGreen transition"
                 >
                   <FaLinkedinIn size={20} />
