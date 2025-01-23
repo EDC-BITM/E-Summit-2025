@@ -15,7 +15,7 @@ const FeaturedSpeakers = () => {
     () => [
       {
         name: "Nidhi Banthia",
-        role: "Designation",
+        role: "Renowned business coach and influencer",
         img: Nidhi,
         instagram: "https://www.instagram.com/nidhibanthiamehta/",
         linkedin: "https://www.linkedin.com/in/nidhibanthiamehta/",
@@ -47,7 +47,7 @@ const FeaturedSpeakers = () => {
       },
       {
         name: "Upasana Makati",
-        role: "Designation",
+        role: "Founder of White Print",
         img: Upasana,
         instagram: "https://www.instagram.com/upasanamakati/",
         linkedin: "https://www.linkedin.com/in/upasanamakati/",
