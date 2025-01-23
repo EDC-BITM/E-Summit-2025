@@ -15,7 +15,7 @@ const FeaturedSpeakers = () => {
     () => [
       {
         name: "Nidhi Banthia",
-        role: "Designation",
+        role: "Business, Entrepreneurship & Leadership Coach",
         img: Nidhi,
         instagram: "https://www.instagram.com/nidhibanthiamehta/",
         linkedin: "https://www.linkedin.com/in/nidhibanthiamehta/",
@@ -66,7 +66,7 @@ const FeaturedSpeakers = () => {
   );
 
   return (
-    <section className="speakers w-full relative mx-auto pb-12">
+    <section className="speakers w-full relative mx-auto md:pb-40 pb-20 ">
       <div className="absolute top-0 left-0 w-[200px] h-[400px] md:w-[600px] md:h-[600px] bg-green-500/30 rounded-full blur-3xl" />
       <div data-aos="fade-down" data-aos-duration="1000" className="text-center mb-16">
         <h1 className="font-semibold md:text-5xl text-3xl text-white">
@@ -75,18 +75,15 @@ const FeaturedSpeakers = () => {
         <div className="h-1 w-36 bg-primaryGreen rounded-md mx-auto mt-4"></div>
       </div>
       <div className="flex flex-col justify-center items-center md:gap-12 gap-6">
-        <div className="grid grid-cols-1 md:grid-cols-3 place-items-center md:gap-20 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 place-items-center md:gap-20 gap-10 md:gap-y-40 gap-y-40">
           {speakersData.map((speaker, index) => (
-            <div key={index} data-aos="flip-left" className="text-white shadow-md rounded-lg overflow-hidden relative group">
+            <div key={index} data-aos="flip-left" className="text-white shadow-md rounded-lg ">
               <img src={speaker.img} className="w-full max-w-64 h-80 rounded-lg" />
-              <div className="absolute left-0 bottom-[-100%] opacity-0 group-hover:opacity-100 group-hover:bottom-[-60%] p-4 w-full h-full bg-[#111111]/60 group-hover:backdrop-blur-sm duration-75">
+              <div className="absolute left-0 p-4 w-full h-full bg-[#111111]/60">
                 <div className="space-y-1">
-                  <Slide cascade>
                     <h1 className="text-xl font-semibold">{speaker.name}</h1>
                     <h6 className="text-primaryGreen text-sm">{speaker.role}</h6>
-                    <Fade cascade damping={0.05}>
                       <h6 className="pb-2">{speaker.desc}</h6>
-                    </Fade>
                     <div className="flex flex-row justify-start items-start gap-4">
                       <a href={speaker.instagram}>
                         <FaInstagram />
@@ -98,7 +95,6 @@ const FeaturedSpeakers = () => {
                         <BsTwitterX />
                       </a>
                     </div>
-                  </Slide>
                 </div>
               </div>
             </div>
