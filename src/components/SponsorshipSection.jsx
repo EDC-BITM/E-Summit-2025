@@ -20,7 +20,7 @@ const SponsorshipSection = () => {
         <div className="h-1 w-36 bg-primaryGreen rounded-md"></div>
       </div>
         <div className="my-16">
-          <h3 className="text-lg md:text-xl font-medium text-white text-center mb-8">
+          <h3 data-aos="fade-down" data-aos-duration="1000" className="text-lg md:text-xl font-medium text-white text-center mb-8">
             Title Sponsor
           </h3>
           <div
@@ -40,7 +40,7 @@ const SponsorshipSection = () => {
 
         {/* Prime Sponsors */}
         <div className="my-16">
-          <h3 className="text-lg md:text-xl font-medium text-white text-center mb-8">
+          <h3 data-aos="fade-down" data-aos-duration="1000" className="text-lg md:text-xl font-medium text-white text-center mb-8">
             Prime Sponsor
           </h3>
           <div
@@ -58,7 +58,7 @@ const SponsorshipSection = () => {
           </div>
         </div>
         <div>
-          <h3 className="text-lg md:text-xl font-medium text-white text-center mb-8">
+          <h3 data-aos="fade-down" data-aos-duration="1000" className="text-lg md:text-xl font-medium text-white text-center mb-8">
             Co-powered by
           </h3>
           <div
@@ -81,7 +81,7 @@ const SponsorshipSection = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Food Partner */}
             <div className="flex flex-col items-center">
-              <h3 className="text-lg md:text-xl font-medium text-white text-center mb-8">
+              <h3 data-aos="fade-down" data-aos-duration="1000" className="text-lg md:text-xl font-medium text-white text-center mb-8">
                 Food Partner
               </h3>
               <div className="bg-white w-full h-36 md:h-48 rounded-lg transition-transform duration-300 ease-in-out hover:scale-105 flex items-center justify-center">
@@ -95,7 +95,7 @@ const SponsorshipSection = () => {
 
             {/* Anime Partner */}
             <div className="flex flex-col items-center">
-              <h3 className="text-lg md:text-xl font-medium text-white text-center mb-8">
+              <h3 data-aos="fade-down" data-aos-duration="1000" className="text-lg md:text-xl font-medium text-white text-center mb-8">
                 Anime Partner
               </h3>
               <div className="bg-white w-full h-36 md:h-48 rounded-lg transition-transform duration-300 ease-in-out hover:scale-105 flex items-center justify-center">
@@ -110,7 +110,7 @@ const SponsorshipSection = () => {
         </div>
 
         {/* Three Partners Section */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
+        <div data-aos="fade-down" data-aos-duration="1000" className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
           {/* Edu Partner */}
           <div className="flex flex-col items-center">
             <h3 className="text-lg md:text-xl font-medium text-white text-center mb-8">
