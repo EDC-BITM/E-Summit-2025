@@ -7,11 +7,11 @@ function PastSponsors() {
   const sponsors = useMemo(() => {
     return (
       <div className="sponsors relative py-12 px-4 mx-auto">
-        <div className="flex flex-col justify-center items-center md:gap-6 gap-3">
-          <h1 data-aos="fade-down" data-aos-duration="1000" className="font-semibold md:text-5xl text-3xl text-white">
+        <div data-aos="fade-down" data-aos-duration="1000" className="flex flex-col justify-center items-center md:gap-6 gap-3">
+          <h1 className="font-semibold md:text-5xl text-3xl text-white">
             Past Sponsors
           </h1>
-          <div className="h-1 w-36 bg-[#00B25C] rounded-md md:mb-16 mb-8"></div>
+          <div className="h-1 w-36 bg-primaryGreen rounded-md md:mb-16 mb-8"></div>
         </div>
         <div className='flex overflow-hidden md:my-10'>
           <div className='slide flex animate-infinte-slide shrink-0 whitespace-nowrap gap-12 mx-2'>

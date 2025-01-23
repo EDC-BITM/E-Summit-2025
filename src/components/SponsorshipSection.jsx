@@ -13,8 +13,8 @@ const SponsorshipSection = () => {
     <section className="sponsors relative pb-12 px-4 mx-auto">
       <div className="absolute top-28 left-0 w-[400px] h-[400px] md:w-[500px] md:h-[500px] bg-green-500/30 rounded-full blur-3xl" />
       <div className="container mx-auto max-w-6xl relative z-10">
-        <div className="flex flex-col justify-center items-center md:gap-6 gap-3 mb-8 ">
-        <h1 data-aos="fade-down" data-aos-duration="1000" className="font-semibold md:text-5xl text-3xl text-white">
+        <div data-aos="fade-down" data-aos-duration="1000" className="flex flex-col justify-center items-center md:gap-6 gap-3 mb-8 ">
+        <h1 className="font-semibold md:text-5xl text-3xl text-white">
           Our Sponsors
         </h1>
         <div className="h-1 w-36 bg-primaryGreen rounded-md"></div>
