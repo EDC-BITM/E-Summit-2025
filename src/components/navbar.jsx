@@ -34,7 +34,7 @@ const Navbar = () => {
             )}
           </div>
           
-          <div className="hidden md:flex items-center space-x-8 mr-16 ml-auto">
+          <div className="hidden md:flex items-center space-x-8 ml-auto">
             <Link to="about" smooth={true} duration={500} offset={-100} className="cursor-pointer text-primaryText hover:text-primaryGreen transition font-medium">
               About
             </Link>

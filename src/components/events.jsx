@@ -5,28 +5,22 @@ const EventSchedule = () => {
     const [transitioning, setTransitioning] = useState(false);
 
     const handleDayChange = (day) => {
-      if (day !== activeDay) {
-        setTransitioning(true);
-        setTimeout(() => {
-          setActiveDay(day);
-          setTransitioning(false);
-        }, 300);
-      }
+        if (day !== activeDay) {
+            setTransitioning(true);
+            setTimeout(() => {
+                setActiveDay(day);
+                setTransitioning(false);
+            }, 300);
+        }
     };
 
     const scheduleData = useMemo(() => ({
         day1: [
             {
-                time: '5:00 PM - 6:30 PM',
-                title: 'Opening Ceremony',
+                time: '5:00 PM - 8:00 PM',
+                title: 'Opening Ceremony and Panel Discussion with Nidhi Banthia & Upasana Makati',
                 location: 'CAT Hall',
-                link: '#',
-            },
-            {
-                time: '6:30 PM - 8:30 PM',
-                title: 'Keynote Speaker Session',
-                location: 'CAT Hall',
-                link: '#',
+                link: '',
             },
         ],
         day2: [
@@ -37,12 +31,6 @@ const EventSchedule = () => {
                 link: 'https://qr-codes.io/e2eZ8u',
             },
             {
-                time: '11:00 AM - 01:00 PM',
-                title: 'Keynote Speaker Session',
-                location: 'CAT Hall',
-                link: '#',
-            },
-            {
                 time: '12:00 PM - 5:00 PM',
                 title: 'IPL Auction',
                 location: 'Lecture Hall 1',
@@ -50,7 +38,7 @@ const EventSchedule = () => {
             },
             {
                 time: '3:00 PM - 5:00 PM',
-                title: 'Ad-venture ROund-1',
+                title: 'Ad-venture Round-1',
                 location: 'Room 219, Main Building',
                 link: 'https://qr-codes.io/jPuc2G',
             },
@@ -61,10 +49,10 @@ const EventSchedule = () => {
                 link: 'https://qr-codes.io/WYtiwl',
             },
             {
-                time: '5:30 PM - 8:30 PM',
-                title: 'Keynote Speaker Session',
+                time: '5:00 PM - 8:00 PM',
+                title: 'Keynote Session with Ashutosh Naik & Muskaan Sancheti',
                 location: 'CAT Hall',
-                link: '#',
+                link: '',
             },
             {
                 time: '12:00 AM - 5:00 AM',
@@ -87,10 +75,10 @@ const EventSchedule = () => {
                 link: 'https://qr-codes.io/VFRK3D',
             },
             {
-                time: '12:00 AM - 2:00 PM',
-                title: 'Keynote Speaker Session',
+                time: '1:00 AM - 2:00 PM',
+                title: 'Keynote Session with Sairaj Dhond',
                 location: 'CAT Hall',
-                link: '#',
+                link: '',
             },
             {
                 time: '3:00 PM - 5:00 PM',
@@ -106,9 +94,9 @@ const EventSchedule = () => {
             },
             {
                 time: '5:30 PM - 8:30 PM',
-                title: 'Keynote Speaker Session + Closing Ceremony',
+                title: 'Fireside Chat with Dr. Vijender Chauhan & Closing Ceremony',
                 location: 'CAT Hall',
-                link: '#',
+                link: '',
             },
         ],
     }), []);
@@ -130,16 +118,18 @@ const EventSchedule = () => {
                                 className={`px-6 py-2 rounded-lg backdrop-blur-lg border border-[#616161] transition-all duration-300 ${activeDay === day
                                     ? 'bg-primaryGreen hover:bg-secondaryGreen text-primaryText'
                                     : 'bg-primaryGrey hover:bg-secondaryGrey text-secondaryText'
-                                }`}
+                                    }`}
                             >
                                 {day === 'day1' ? 'Day 1' : day === 'day2' ? 'Day 2' : 'Day 3'}
                             </button>
                         ))}
                     </div>
 
-                    <div
-                        className={`grid md:grid-cols-2 gap-6 transition-opacity duration-300 ${transitioning ? 'opacity-0' : 'opacity-100'}`}
-                    >
+                    <div className={`grid ${scheduleData[activeDay].length === 1
+                            ? 'grid-cols-1 place-items-center'
+                            : 'md:grid-cols-2'
+                        } gap-6 transition-opacity duration-300 ${transitioning ? 'opacity-0' : 'opacity-100'
+                        }`}>
                         {scheduleData[activeDay].map((event, index) => (
                             <div
                                 data-aos="fade-up"
@@ -153,9 +143,11 @@ const EventSchedule = () => {
                                         <h3 className="text-primaryText text-xl font-semibold mt-2">{event.title}</h3>
                                         <p className="text-secondaryText mt-1">{event.location}</p>
                                     </div>
-                                    <button className="mt-4 md:mt-0 px-4 py-2 bg-primaryGreen text-primaryText rounded-lg transform transition duration-300 hover:scale-105 hover:bg-secondaryGreen">
-                                        <a href={event.link}>Register Now</a>
-                                    </button>
+                                    {event.link && (
+                                        <button className="mt-4 md:mt-0 px-4 py-2 bg-primaryGreen text-primaryText rounded-lg transform transition duration-300 hover:scale-105 hover:bg-secondaryGreen">
+                                            <a href={event.link}>Register Now</a>
+                                        </button>
+                                    )}
                                 </div>
                             </div>
                         ))}

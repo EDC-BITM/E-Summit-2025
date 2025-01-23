@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container mx-auto flex flex-col lg:flex-row justify-between items-center lg:items-start space-y-6 lg:space-y-0">
         {/* Left Section */}
         <div className="flex-1">
-          <img src={logo} alt="" className="md:h-16 h-10 ml-1 sm:p-0" />
+          <img src={logo}  className="md:h-16 h-10 ml-1 sm:p-0" />
           <p className="text-secondaryText px-4">
           Scale Your Story – Where ambitions rise, ideas thrive, and your journey to impact begins!
           </p>
@@ -39,7 +39,7 @@ const Footer = () => {
 
         {/* Bottom Section */}
       <div className="text-center text-gray-500 text-sm mt-12 mb-2">
-        © 2024 EDC, BIT Mesra. All rights reserved.
+        © 2025 EDC, BIT Mesra. All rights reserved.
       </div>
     </footer>
   );

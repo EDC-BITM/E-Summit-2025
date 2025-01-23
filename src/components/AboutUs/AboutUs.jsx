@@ -49,7 +49,7 @@ const AboutUs = () => {
         {/* Right Container */}
         <div data-aos="fade-left" data-aos-duration="1000" className="flex flex-col gap-6 md:w-2/5 w-4/5">
           {/* Number of Attendees and Number of Speakers in top container*/}
-          <div className="flex gap-6 h-full">
+          <div className="flex gap-6 md:h-full h-auto">
             <motion.div
               whileHover={{ scale: 1.03 }}
               className="flex items-center justify-center flex-col p-4 bg-primaryGrey rounded-md border border-borderColor text-center w-1/2 h-full text-secondaryText"
@@ -57,7 +57,7 @@ const AboutUs = () => {
               <AnimatedCounter
                 from={1000}
                 to={5000}
-                className="text-primaryGreen md:text-5xl text-3xl font-semibold"
+                className="text-primaryGreen lg:text-5xl md:text-4xl text-2xl font-semibold"
               >
                 +
               </AnimatedCounter>
@@ -70,7 +70,7 @@ const AboutUs = () => {
               <AnimatedCounter
                 from={0}
                 to={6}
-                className="text-primaryGreen md:text-5xl text-3xl font-semibold"
+                className="text-primaryGreen lg:text-5xl md:text-4xl text-2xl font-semibold"
               >
                 +
               </AnimatedCounter>
@@ -86,7 +86,7 @@ const AboutUs = () => {
               <AnimatedCounter
                 from={0}
                 to={10}
-                className="text-primaryGreen md:text-5xl text-3xl font-semibold"
+                className="text-primaryGreen lg:text-5xl md:text-4xl text-2xl font-semibold"
               >
                 +
               </AnimatedCounter>
@@ -98,8 +98,8 @@ const AboutUs = () => {
             >
               <AnimatedCounter
                 from={0}
-                to={2}
-                className="text-primaryGreen md:text-5xl text-3xl font-semibold"
+                to={1}
+                className="text-primaryGreen lg:text-5xl md:text-4xl text-2xl font-semibold"
               >
                 L+
               </AnimatedCounter>
