@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react"
+import React, { useEffect, useRef, useState, useMemo } from "react"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import { FaLinkedin } from "react-icons/fa"
 import { BsTwitterX } from "react-icons/bs"
@@ -77,83 +77,69 @@ const PastSpeakers = () => {
   const getResponsiveValues = () => {
     const width = window.innerWidth;
     if (width < 640) {
-      return {
-        itemSize: 150,
-        translateZ: 150,
-        containerHeight: 300
-      };
+      return { itemSize: 150, translateZ: 150, containerHeight: 300 };
     } else if (width < 1024) {
-      return {
-        itemSize: 150,
-        translateZ: 200,
-        containerHeight: 400
-      };
+      return { itemSize: 150, translateZ: 200, containerHeight: 400 };
     } else {
-      return {
-        itemSize: 200,
-        translateZ: 300,
-        containerHeight: 400
-      };
+      return { itemSize: 200, translateZ: 300, containerHeight: 400 };
     }
   };
 
   const [responsiveValues, setResponsiveValues] = useState(getResponsiveValues());
 
   useEffect(() => {
-    const handleResize = () => {
-      setResponsiveValues(getResponsiveValues());
-    };
-
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    const handleResize = () => setResponsiveValues(getResponsiveValues());
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  const containerStyle = useMemo(
+    () => ({
+      perspective: "1000px",
+      perspectiveOrigin: "50% 50%",
+      height: `${responsiveValues.containerHeight}px`
+    }),
+    [responsiveValues.containerHeight]
+  );
+
+  const carouselStyle = useMemo(
+    () => ({
+      position: "relative",
+      width: "100%",
+      height: "100%",
+      transformStyle: "preserve-3d",
+      transform: `rotateY(${rotation}deg)`,
+      transition: "transform 0.5s ease-out"
+    }),
+    [rotation]
+  );
+
   const rotateCarousel = (direction) => {
-    const newRotation = rotation + (direction * (360 / numberOfItems));
-    setRotation(newRotation);
-  };
-
-  const containerStyle = {
-    perspective: "1000px",
-    perspectiveOrigin: "50% 50%",
-    height: `${responsiveValues.containerHeight}px`
-  };
-
-  const carouselStyle = {
-    position: "relative",
-    width: "100%",
-    height: "100%",
-    transformStyle: "preserve-3d",
-    transform: `rotateY(${rotation}deg)`,
-    transition: "transform 0.5s ease-out"
+    setRotation((prev) => prev + direction * (360 / numberOfItems));
   };
 
   return (
     <div className="w-full flex flex-col items-center justify-center overflow-x-hidden overflow-hidden md:py-20 py-12">
-      <div 
+      <div
         ref={containerRef}
         className="w-full max-w-4xl mx-auto px-4 relative"
         style={containerStyle}
       >
-        <button 
+        <button
           onClick={() => rotateCarousel(1)}
           className="absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-white p-2 rounded-full shadow-lg hover:bg-gray-100 transition-colors"
         >
           <ChevronLeft className="w-6 h-6" />
         </button>
-        
-        <button 
+
+        <button
           onClick={() => rotateCarousel(-1)}
           className="absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-white p-2 rounded-full shadow-lg hover:bg-gray-100 transition-colors"
         >
           <ChevronRight className="w-6 h-6" />
         </button>
 
-        <div
-          ref={carouselRef}
-          style={carouselStyle}
-          className=""
-        >
+        <div ref={carouselRef} style={carouselStyle}>
           {speakers.map((speaker, index) => (
             <div
               key={index}
@@ -164,29 +150,37 @@ const PastSpeakers = () => {
                 left: "50%",
                 top: "50%",
                 transform: `
-                  translateX(-50%) 
-                  translateY(-50%) 
-                  rotateY(${angleIncrement * index}deg) 
+                  translateX(-50%)
+                  translateY(-50%)
+                  rotateY(${angleIncrement * index}deg)
                   translateZ(${responsiveValues.translateZ}px)
                 `,
               }}
-              className="flex flex-col items-center justify-center bg-black rounded-lg shadow-lg transition-transform duration-300"
+              className="flex flex-col items-center justify-center bg-black rounded-t-full transition-transform duration-300"
             >
-              <img 
+              <img
                 src={speaker.image}
                 alt={speaker.name}
-                className="w-full h-full object-cover rounded-lg"
+                className="w-full h-full object-cover rounded-t-full"
                 draggable={false}
               />
-              <div className="space-y-1 bg-black w-full h-full p-2">
+              <div className="space-y-1 bg-black w-full h-full p-2 rounded-b-md">
                 <h1 className="text-sm font-semibold text-white">{speaker.name}</h1>
-                <h6 className="text-[#00B25C] text-[0.65rem]">{speaker.role}</h6>
+                <h6 className="text-primaryGreen text-[0.65rem]">{speaker.role}</h6>
                 <h6 className="text-[0.65rem] text-[#B6B6B6]">{speaker.description}</h6>
                 <div className="flex flex-row justify-start items-start gap-4 text-[#B6B6B6]">
-                  <a href={speaker.socialLinks.linkedin} target="_blank" rel="noopener noreferrer">
+                  <a
+                    href={speaker.socialLinks.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <FaLinkedin />
                   </a>
-                  <a href={speaker.socialLinks.twitter} target="_blank" rel="noopener noreferrer">
+                  <a
+                    href={speaker.socialLinks.twitter}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <BsTwitterX />
                   </a>
                 </div>

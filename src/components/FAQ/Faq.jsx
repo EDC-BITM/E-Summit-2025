@@ -72,13 +72,12 @@ const Faq = () => {
   return (
     <section className="faq w-full relative mx-auto py-4 md:py-8">
       <div className="absolute top-0 left-0 w-[200px] h-[400px] md:w-[600px] md:h-[600px] bg-green-500/30 rounded-full blur-3xl" />
-      <div className="flex flex-col justify-center items-center md:gap-6 gap-3 mb-8 ">
-        <h1 data-aos="fade-down" data-aos-duration="1000" className="font-semibold lg:text-5xl text-2xl text-white">
+      <div data-aos="fade-down" data-aos-duration="1000" className="flex flex-col justify-center items-center md:gap-6 gap-3 mb-8 ">
+        <h1 className="font-semibold lg:text-5xl text-2xl text-white">
           Frequently Asked Questions
         </h1>
         <div className="h-1 w-36 bg-primaryGreen rounded-md"></div>
       </div>
-
       <div data-aos="fade-down" data-aos-duration="1000" className="w-full flex justify-center">
         <div className="md:w-[50rem] w-96 h-max space-y-4">
           {memoizedQuestions}

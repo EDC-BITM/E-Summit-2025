@@ -96,7 +96,7 @@ const EventSchedule = () => {
                 time: '5:30 PM - 8:30 PM',
                 title: 'Fireside Chat with Dr. Vijender Chauhan & Closing Ceremony',
                 location: 'CAT Hall',
-                link: '',
+                link: 'https://docs.google.com/forms/d/1ZhyCSdFLgrvqaQEE2JNPFtmQl1Og93craEv_9SUH1mU/edit',
             },
         ],
     }), []);
@@ -105,12 +105,12 @@ const EventSchedule = () => {
         <section className="events pb-12">
             <div className="absolute right-0 w-[100px] h-[400px] md:w-[600px] md:h-[600px] bg-green-500/30 rounded-full blur-3xl z-auto" />
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="text-center mb-16">
-                    <h1 data-aos="fade-down" data-aos-duration="1000" className="font-semibold md:text-5xl text-3xl text-white">Events Schedule</h1>
+                <div data-aos="fade-down" data-aos-duration="1000" className="text-center mb-16">
+                    <h1  className="font-semibold md:text-5xl text-3xl text-white">Events Schedule</h1>
                     <div className="h-1 w-36 bg-primaryGreen rounded-md mx-auto mt-4"></div>
                 </div>
                 <div className="mb-12">
-                    <div className="flex justify-center space-x-4 mb-8">
+                    <div data-aos="fade-down" data-aos-duration="1000" className="flex justify-center space-x-4 mb-8">
                         {['day1', 'day2', 'day3'].map((day) => (
                             <button
                                 key={day}
