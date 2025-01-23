@@ -110,11 +110,11 @@ const SponsorshipSection = () => {
         </div>
 
         {/* Three Partners Section */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
           {/* Edu Partner */}
           <div className="flex flex-col items-center">
             <h3 className="text-lg md:text-xl font-medium text-white text-center mb-8">
-              Edu Partner
+              Education Partner
             </h3>
             <div className="bg-white w-full h-36 md:h-48 rounded-lg transition-transform duration-300 ease-in-out hover:scale-105 flex items-center justify-center">
               <img

@@ -22,7 +22,7 @@ const FeaturedSpeakers = () => {
           >
             <img
               src={Photo1}
-              alt=""
+              
               className="w-full max-w-[300px] h-[350px] rounded-lg"
             />
             {/* overlay section */}
@@ -47,7 +47,7 @@ const FeaturedSpeakers = () => {
           >
             <img
               src={Photo2}
-              alt=""
+              
               className="w-full max-w-[300px] h-[350px] rounded-lg"
             />
             {/* overlay section */}
@@ -72,7 +72,7 @@ const FeaturedSpeakers = () => {
           >
             <img
               src={Photo2}
-              alt=""
+              
               className="w-full max-w-[300px] h-[350px] rounded-lg"
             />
             {/* overlay section */}
@@ -99,7 +99,7 @@ const FeaturedSpeakers = () => {
           >
             <img
               src={Photo2}
-              alt=""
+              
               className="w-full max-w-[300px] h-[350px] rounded-lg"
             />
             {/* overlay section */}
@@ -124,7 +124,7 @@ const FeaturedSpeakers = () => {
           >
             <img
               src={Photo2}
-              alt=""
+              
               className="w-full max-w-[300px] h-[350px] rounded-lg"
             />
             {/* overlay section */}
