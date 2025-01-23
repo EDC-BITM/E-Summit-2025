@@ -55,13 +55,13 @@ const AboutUs = () => {
               className="flex items-center justify-center flex-col p-4 bg-primaryGrey rounded-md border border-borderColor text-center w-1/2 h-full text-secondaryText"
             >
               <AnimatedCounter
-                from={1000}
-                to={5000}
+                from={50}
+                to={100}
                 className="text-primaryGreen lg:text-5xl md:text-4xl text-2xl font-semibold"
               >
-                +
+                K+
               </AnimatedCounter>
-              Attendees
+              Social Media Impressions
             </motion.div>
             <motion.div
               whileHover={{ scale: 1.03 }}

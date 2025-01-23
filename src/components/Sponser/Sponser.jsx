@@ -6,14 +6,14 @@ import img3 from '../Sponser/hiralal.jpg'
 function PastSponsors() {
   const sponsors = useMemo(() => {
     return (
-      <div className="sponsors relative py-12 px-4 mx-auto">
+      <div className="sponsors relative pb-12 px-4 mx-auto">
         <div data-aos="fade-down" data-aos-duration="1000" className="flex flex-col justify-center items-center md:gap-6 gap-3">
           <h1 className="font-semibold md:text-5xl text-3xl text-white">
             Past Sponsors
           </h1>
           <div className="h-1 w-36 bg-primaryGreen rounded-md md:mb-16 mb-8"></div>
         </div>
-        <div className='flex overflow-hidden md:my-10'>
+        <div data-aos="fade-down" data-aos-duration="1000" className='flex overflow-hidden md:my-10'>
           <div className='slide flex animate-infinte-slide shrink-0 whitespace-nowrap gap-12 mx-2'>
             <div className='h-40 w-40 flex justify-center items-center bg-white rounded'>
               <img src="https://www.wowdetailingstudio.com/assets/images/logo/logo.png" />
@@ -76,7 +76,7 @@ function PastSponsors() {
               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZShoVBhCZoflB-I35i_BsVH9Lexeanbbq2Q&s" />
             </div>
           </div>
-          <div className=' flex animate-infinte-slide shrink-0 whitespace-nowrap gap-12 mx-2'>
+          <div data-aos="fade-down" data-aos-duration="1000" className='flex animate-infinte-slide shrink-0 whitespace-nowrap gap-12 mx-2'>
             <div className='h-40 w-40 flex justify-center items-center bg-white rounded'>
               <img src="https://www.wowdetailingstudio.com/assets/images/logo/logo.png" />
             </div>
