@@ -145,7 +145,7 @@ const EventSchedule = () => {
                                     </div>
                                     {event.link && (
                                         <button className="mt-4 md:mt-0 px-4 py-2 bg-primaryGreen text-primaryText rounded-lg transform transition duration-300 hover:scale-105 hover:bg-secondaryGreen">
-                                            <a href={event.link}>Register Now</a>
+                                            <a href={event.link} target="_blank" rel="noreferrer">Register Now</a>
                                         </button>
                                     )}
                                 </div>

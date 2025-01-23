@@ -20,17 +20,17 @@ const Footer = () => {
             <div>
               <h3 className="font-semibold text-primaryText mb-4">For Official</h3>
               <ul>
-                <li className="text-secondaryText hover:text-primaryGreen"><a href="mailto:drie@bitmesra.ac.in">Dean of RIE</a></li>
-                <li className="text-secondaryText hover:text-primaryGreen"><a href="mailto:vishalhshah@bitmesra.ac.in">Faculty Advisor</a></li>
-                <li className="text-secondaryText hover:text-primaryGreen"><a href="mailto:president.edc@bitmesra.ac.in">President</a></li>
-                <li className="text-secondaryText hover:text-primaryGreen"><a href="mailto:team.edc@bitmesra.ac.in">EDC Team</a></li>
+                <li className="text-secondaryText hover:text-primaryGreen"><a href="mailto:drie@bitmesra.ac.in" target="_blank" rel="noreferrer">Dean of RIE</a></li>
+                <li className="text-secondaryText hover:text-primaryGreen"><a href="mailto:vishalhshah@bitmesra.ac.in" target="_blank" rel="noreferrer">Faculty Advisor</a></li>
+                <li className="text-secondaryText hover:text-primaryGreen"><a href="mailto:president.edc@bitmesra.ac.in" target="_blank" rel="noreferrer">President</a></li>
+                <li className="text-secondaryText hover:text-primaryGreen"><a href="mailto:team.edc@bitmesra.ac.in" target="_blank" rel="noreferrer">EDC Team</a></li>
               </ul>
             </div>
             <div>
               <h3 className="font-semibold text-primaryText mb-4">For Queries</h3>
               <ul>
-                <li className="text-secondaryText hover:text-primaryGreen"><a href="mailto:btech10947.22@bitmesra.ac.in">Pranav Raj Srivastav</a></li>
-                <li className="text-secondaryText hover:text-primaryGreen"><a href="mailto:btech10731.22@bitmesra.ac.in">Anshuman Tomar</a></li>
+                <li className="text-secondaryText hover:text-primaryGreen"><a href="mailto:btech10947.22@bitmesra.ac.in" target="_blank" rel="noreferrer">Pranav Raj Srivastav</a></li>
+                <li className="text-secondaryText hover:text-primaryGreen"><a href="mailto:btech10731.22@bitmesra.ac.in" target="_blank" rel="noreferrer">Anshuman Tomar</a></li>
               </ul>
             </div>
           </div>

@@ -88,13 +88,13 @@ const FeaturedSpeakers = () => {
                       <h6 className="pb-2">{speaker.desc}</h6>
                     </Fade>
                     <div className="flex flex-row justify-start items-start gap-4">
-                      <a href={speaker.instagram}>
+                      <a href={speaker.instagram} target="_blank" rel="noreferrer">
                         <FaInstagram />
                       </a>
-                      <a href={speaker.linkedin}>
+                      <a href={speaker.linkedin} target="_blank" rel="noreferrer">
                         <FaLinkedinIn />
                       </a>
-                      <a href={speaker.twitter}>
+                      <a href={speaker.twitter} target="_blank" rel="noreferrer">
                         <BsTwitterX />
                       </a>
                     </div>
