@@ -30,7 +30,7 @@ const Footer = () => {
               <h3 className="font-semibold text-primaryText mb-4">For Queries</h3>
               <ul>
                 <li className="text-secondaryText hover:text-primaryGreen"><a href="mailto:btech10947.22@bitmesra.ac.in" target="_blank" rel="noreferrer">Pranav Raj Srivastav</a></li>
-                <li className="text-secondaryText hover:text-primaryGreen"><a href="mailto:btech10731.22@bitmesra.ac.in" target="_blank" rel="noreferrer">Anshuman Tomar</a></li>
+                <li className="text-secondaryText hover:text-primaryGreen"><a href="mailto:btech10259.22@bitmesra.ac.in" target="_blank" rel="noreferrer">Yogesh Kumar</a></li>
               </ul>
             </div>
           </div>
