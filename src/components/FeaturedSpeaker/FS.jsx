@@ -79,7 +79,7 @@ const FeaturedSpeakers = () => {
           {speakersData.map((speaker, index) => (
             <div key={index} data-aos="flip-left" className="text-white shadow-md rounded-lg mb-28">
               <img src={speaker.img} className="w-full max-w-64 h-80 rounded-lg" />
-              <div className="absolute left-0 p-4 w-full h-full bg-[#111111]/60">
+              <div className="absolute left-0 p-4 w-full h-full bg-black">
                 <div className="space-y-1">
                     <h1 className="text-xl font-semibold">{speaker.name}</h1>
                     <h6 className="text-primaryGreen text-sm">{speaker.role}</h6>
