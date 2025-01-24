@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="flex-1">
           <img src={logo}  className="md:h-16 h-10 ml-1 sm:p-0" />
           <p className="text-secondaryText px-4">
-          Scale Your Story – Where ambitions rise, ideas thrive, and your journey to impact begins!
+          Scale Your Story Where ambitions rise, ideas thrive, and your journey to impact begins!
           </p>
         </div>
 
