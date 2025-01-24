@@ -75,11 +75,11 @@ const FeaturedSpeakers = () => {
         <div className="h-1 w-36 bg-primaryGreen rounded-md mx-auto mt-4"></div>
       </div>
       <div className="flex flex-col justify-center items-center md:gap-20 gap-6">
-        <div className="grid grid-cols-1 md:grid-cols-3 place-items-center md:gap-20 gap-10 md:gap-y-40 gap-y-40">
+        <div className="grid grid-cols-1 md:grid-cols-3 place-items-center md:gap-20 gap-10 md:gap-y-20 gap-y-20">
           {speakersData.map((speaker, index) => (
             <div key={index} data-aos="flip-left" className="text-white shadow-md rounded-lg mb-28">
-              <img src={speaker.img} className="w-full max-w-64 h-80 rounded-lg" />
-              <div className="absolute left-0 p-4 h-full bg-[#111111]/60">
+              <img src={speaker.img} className="w-full max-w-64 h-80 rounded-t-lg" />
+              <div className="absolute left-0 p-4 w-full h-32 bg-black">
                 <div className="space-y-1">
                     <h1 className="text-xl font-semibold">{speaker.name}</h1>
                     <h6 className="text-primaryGreen text-sm">{speaker.role}</h6>
