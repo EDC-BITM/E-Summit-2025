@@ -39,18 +39,16 @@ function SponsorshipSection() {
           
           @keyframes slide-left {
             0% {
-              transform: translateX(-100%);
+              transform: translateX(-51%);
             }
             100% {
               transform: translateX(0);
             }
           }
           .animate-infinite-slide-left {
-            animation: slide-left 30s linear infinite;
+            animation: slide-left 20s linear infinite;
           }
-          .sponsors-container:hover .animate-infinite-slide-left {
-            animation-play-state: paused;
-          }
+          
           .sponsor-title {
             font-family: 'Open Sans', sans-serif;
             font-weight: 700;
@@ -65,7 +63,7 @@ function SponsorshipSection() {
           <div className="h-1 w-36 bg-primaryGreen rounded-md md:mb-16 mb-8"></div>
         </div>
         <div data-aos="fade-down" data-aos-duration="1000" className="sponsors-container flex overflow-hidden md:my-10">
-          <div className="animate-infinite-slide-left flex shrink-0 gap-24">
+          <div className="animate-infinite-slide-left flex shrink-0 gap-24 ">
             {[...sponsorImages, ...sponsorImages].map((img, index) => (
               <div key={`sponsor-${index}`} className="flex flex-col items-center">
                 <div className="h-40 w-40 flex-shrink-0 flex justify-center items-center bg-white rounded">
