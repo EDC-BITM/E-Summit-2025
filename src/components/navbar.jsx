@@ -7,6 +7,9 @@ import { ImCross } from "react-icons/im";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const handleLinkClick = () => {
+    setMenuOpen(false);
+  };
 
   const memoizedNavbar = useMemo(() => {
     return (
@@ -69,22 +72,22 @@ const Navbar = () => {
             menuOpen ? "max-h-96 py-4 opacity-100" : "max-h-0 py-0 opacity-0"
           } space-y-6 text-lg`}
         >
-          <Link to="about" smooth={true} duration={500} offset={-100} className="cursor-pointer text-primaryText text-xl hover:text-primaryGreen transition font-medium">
+          <Link to="about" smooth={true} duration={500} offset={-100} onClick={handleLinkClick} className="cursor-pointer text-primaryText text-xl hover:text-primaryGreen transition font-medium">
             About
           </Link>
-          <Link to="events" smooth={true} duration={500} offset={-100} className="cursor-pointer text-primaryText text-xl hover:text-primaryGreen transition font-medium">
+          <Link to="events" smooth={true} duration={500} offset={-100} onClick={handleLinkClick} className="cursor-pointer text-primaryText text-xl hover:text-primaryGreen transition font-medium">
             Events
           </Link>
-          <Link to="speakers" smooth={true} duration={500} offset={-100} className="cursor-pointer text-primaryText text-xl hover:text-primaryGreen transition font-medium">
+          <Link to="speakers" smooth={true} duration={500} offset={-100} onClick={handleLinkClick} className="cursor-pointer text-primaryText text-xl hover:text-primaryGreen transition font-medium">
             Speakers
           </Link>
-          <Link to="sponsors" smooth={true} duration={500} offset={-100} className="cursor-pointer text-primaryText text-xl hover:text-primaryGreen transition font-medium">
+          <Link to="sponsors" smooth={true} duration={500} offset={-100} onClick={handleLinkClick} className="cursor-pointer text-primaryText text-xl hover:text-primaryGreen transition font-medium">
             Sponsors
           </Link>
-          <Link to="faq" smooth={true} duration={500} offset={-100} className="cursor-pointer text-primaryText text-xl hover:text-primaryGreen transition font-medium">
+          <Link to="faq" smooth={true} duration={500} offset={-100} onClick={handleLinkClick} className="cursor-pointer text-primaryText text-xl hover:text-primaryGreen transition font-medium">
             FAQ
           </Link>
-          <Link to="contact" smooth={true} duration={500} offset={-100} className="cursor-pointer text-primaryText text-xl hover:text-primaryGreen transition font-medium">
+          <Link to="contact" smooth={true} duration={500} offset={-100} onClick={handleLinkClick} className="cursor-pointer text-primaryText text-xl hover:text-primaryGreen transition font-medium">
             Contact
           </Link>
         </div>
