@@ -1,161 +1,93 @@
-import React from 'react';
-import img1 from './Sponser/ccl.jpg';
-import img2 from './Sponser/hiralal.jpg';
-import img3 from './Sponser/bharatversity.png';
-import img4 from './Sponser/onebite.png';
-import img5 from './Sponser/mimicon.png';
-import img6 from './Sponser/piyush.png';
-import img7 from './Sponser/campusexpress.jpeg';
-import img8 from './Sponser/startupjhk.png';
+import React, { useMemo } from "react"
+import img1 from "./Sponser/ccl.jpg"
+import img2 from "./Sponser/hiralal.jpg"
+import img3 from "./Sponser/bharatversity.png"
+import img4 from "./Sponser/acs.jpeg"
+import img5 from "./Sponser/mimicon.png"
+import img6 from "./Sponser/piyush.png"
+import img7 from "./Sponser/campusexpress.jpeg"
+import img8 from "./Sponser/startupjhk.png"
+import img9 from "./Sponser/maruti.png"
+import img10 from "./Sponser/hyundai.png"
+import img11 from "./Sponser/dominos.jpg"
+import img12 from "./Sponser/skoda.jpg"
+import img13 from "./Sponser/isteve.jpg"
 
-const SponsorshipSection = () => {
-  return (
-    <section className="sponsors relative pb-12 px-4 mx-auto">
-      <div className="absolute top-28 left-0 w-[400px] h-[400px] md:w-[500px] md:h-[500px] bg-green-500/30 rounded-full blur-3xl" />
-      <div className="container mx-auto max-w-6xl relative z-10">
-        <div data-aos="fade-down" data-aos-duration="1000" className="flex flex-col justify-center items-center md:gap-6 gap-3 mb-8 ">
-        <h1 className="font-semibold md:text-5xl text-3xl text-white">
-          Our Sponsors
-        </h1>
-        <div className="h-1 w-36 bg-primaryGreen rounded-md"></div>
-      </div>
-        <div className="my-16">
-          <h3 data-aos="fade-down" data-aos-duration="1000" className="text-lg md:text-xl font-medium text-white text-center mb-8">
-            Title Sponsor
-          </h3>
-          <div
-            data-aos="fade-down"
-            data-aos-duration="1000"
-            className="flex flex-wrap justify-center gap-6 md:gap-8"
-          >
-            <div className="bg-white w-72 h-36 md:w-96 md:h-48 rounded-lg transition-transform duration-300 ease-in-out hover:scale-105 flex items-center justify-center">
-              <img
-                src={img1}
-                alt="Coal India Limited (CCL)"
-                className="w-full h-full object-contain"
-              />
-            </div>
-          </div>
-        </div>
+function SponsorshipSection() {
+  const sponsorImages = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13]
+  const sponsorTitles = [
+    "Title Sponsor",
+    "Prime Partner",
+    "Powered By",
+    "Food Partner",
+    "Anime Partner",
+    "Education Partner",
+    "Logistics Partner",
+    "Innovation Partner",
+    "Mobility Partner",
+    "Automobile Partner",
+    "Pizza Partner",
+    "Presented By",
+    "Supporting Partner",
+  ]
 
-        {/* Prime Sponsors */}
-        <div className="my-16">
-          <h3 data-aos="fade-down" data-aos-duration="1000" className="text-lg md:text-xl font-medium text-white text-center mb-8">
-            Prime Sponsor
-          </h3>
-          <div
-            data-aos="fade-down"
-            data-aos-duration="1000"
-            className="flex flex-wrap justify-center gap-6 md:gap-8"
-          >
-            <div className="bg-white w-72 h-36 md:w-96 md:h-48 rounded-lg transition-transform duration-300 ease-in-out hover:scale-105 flex items-center justify-center">
-              <img
-                src={img2}
-                alt="Hiralal Group"
-                className="w-full h-full object-contain"
-              />
-            </div>
-          </div>
+  const currentsponsors = useMemo(() => {
+    return (
+      <div className="sponsors relative pb-12 px-4 mx-auto">
+        <style jsx>{`
+          @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+          
+          @keyframes slide-left {
+            0% {
+              transform: translateX(-100%);
+            }
+            100% {
+              transform: translateX(0);
+            }
+          }
+          .animate-infinite-slide-left {
+            animation: slide-left 30s linear infinite;
+          }
+          .sponsors-container:hover .animate-infinite-slide-left {
+            animation-play-state: paused;
+          }
+          .sponsor-title {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 700;
+          }
+        `}</style>
+        <div
+          data-aos="fade-down"
+          data-aos-duration="1000"
+          className="flex flex-col justify-center items-center md:gap-6 gap-3"
+        >
+          <h1 className="font-semibold md:text-5xl text-3xl text-white">Our Sponsors</h1>
+          <div className="h-1 w-36 bg-primaryGreen rounded-md md:mb-16 mb-8"></div>
         </div>
-        <div>
-          <h3 data-aos="fade-down" data-aos-duration="1000" className="text-lg md:text-xl font-medium text-white text-center mb-8">
-            Co-powered by
-          </h3>
-          <div
-            data-aos="fade-down"
-            data-aos-duration="1000"
-            className="flex flex-wrap justify-center gap-6 md:gap-8"
-          >
-            <div className="bg-white w-72 h-36 md:w-96 md:h-48 rounded-lg transition-transform duration-300 ease-in-out hover:scale-105 flex items-center justify-center">
-              <img
-                src={img3}
-                alt="BharatVersity"
-                className="w-full h-full object-contain"
-              />
-            </div>
-          </div>
-        </div>
-
-        {/* Food and Anime Partners Section */}
-        <div className="my-16">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Food Partner */}
-            <div className="flex flex-col items-center">
-              <h3 data-aos="fade-down" data-aos-duration="1000" className="text-lg md:text-xl font-medium text-white text-center mb-8">
-                Food Partner
-              </h3>
-              <div className="bg-white w-full h-36 md:h-48 rounded-lg transition-transform duration-300 ease-in-out hover:scale-105 flex items-center justify-center">
-                <img
-                  src={img4}
-                  alt="ONEBITE"
-                  className="w-full h-full object-contain"
-                />
+        <div data-aos="fade-down" data-aos-duration="1000" className="sponsors-container flex overflow-hidden md:my-10">
+          <div className="animate-infinite-slide-left flex shrink-0 gap-24">
+            {[...sponsorImages, ...sponsorImages].map((img, index) => (
+              <div key={`sponsor-${index}`} className="flex flex-col items-center">
+                <div className="h-40 w-40 flex-shrink-0 flex justify-center items-center bg-white rounded">
+                  <img
+                    src={img || "/placeholder.svg"}
+                    alt={`Sponsor ${(index % sponsorImages.length) + 1}`}
+                    className="max-w-full max-h-full object-contain"
+                  />
+                </div>
+                <p className="mt-2 text-white sponsor-title text-center">
+                  {sponsorTitles[index % sponsorTitles.length]}
+                </p>
               </div>
-            </div>
-
-            {/* Anime Partner */}
-            <div className="flex flex-col items-center">
-              <h3 data-aos="fade-down" data-aos-duration="1000" className="text-lg md:text-xl font-medium text-white text-center mb-8">
-                Anime Partner
-              </h3>
-              <div className="bg-white w-full h-36 md:h-48 rounded-lg transition-transform duration-300 ease-in-out hover:scale-105 flex items-center justify-center">
-                <img
-                  src={img5}
-                  alt="Mimicon"
-                  className="w-full h-full object-contain"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Three Partners Section */}
-        <div data-aos="fade-down" data-aos-duration="1000" className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
-          {/* Edu Partner */}
-          <div className="flex flex-col items-center">
-            <h3 className="text-lg md:text-xl font-medium text-white text-center mb-8">
-              Education Partner
-            </h3>
-            <div className="bg-white w-full h-36 md:h-48 rounded-lg transition-transform duration-300 ease-in-out hover:scale-105 flex items-center justify-center">
-              <img
-                src={img6}
-                alt="Piyush Academy"
-                className="w-full h-full object-contain p-4"
-              />
-            </div>
-          </div>
-
-          {/* Logistics Partner */}
-          <div className="flex flex-col items-center">
-            <h3 className="text-lg md:text-xl font-medium text-white text-center mb-8">
-              Logistics Partner
-            </h3>
-            <div className="bg-white w-full h-36 md:h-48 rounded-lg transition-transform duration-300 ease-in-out hover:scale-105 flex items-center justify-center">
-              <img
-                src={img7}
-                alt="Campus Express"
-                className="w-full h-full object-contain p-4"
-              />
-            </div>
-          </div>
-
-          {/* Innovation Partner */}
-          <div className="flex flex-col items-center">
-            <h3 className="text-lg md:text-xl font-medium text-white text-center mb-8">
-              Innovation Partner
-            </h3>
-            <div className="bg-white w-full h-36 md:h-48 rounded-lg transition-transform duration-300 ease-in-out hover:scale-105 flex items-center justify-center">
-              <img
-                src={img8}
-                alt="Startup Jharkhand"
-                className="w-full h-full object-contain p-4"
-              />
-            </div>
+            ))}
           </div>
         </div>
       </div>
-    </section>
-  );
-};
+    )
+  }, [sponsorImages]) // Added sponsorImages as a dependency
 
-export default SponsorshipSection;
+  return currentsponsors
+}
+
+export default SponsorshipSection
+
