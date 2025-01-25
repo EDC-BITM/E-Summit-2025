@@ -1,6 +1,7 @@
 import React, { useState, useMemo } from "react";
 import { Link } from "react-scroll";
 import logo from "../assets/esummitlogo.png";
+import bitlogo from "../assets/70years.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { ImCross } from "react-icons/im";
 
@@ -10,12 +11,19 @@ const Navbar = () => {
   const memoizedNavbar = useMemo(() => {
     return (
       <nav className="fixed top-0 left-0 right-0 bg-black shadow-sm z-50">
-        <div className="container mx-auto flex items-center justify-between py-3 px-3 xl:px-2">
+        <div className="container mx-auto flex items-center justify-between py-4 px-3 xl:px-2">
           <img
             draggable={false}
             src={logo}
             alt="E-Summit'25 Logo"
-            className="h-12 w-auto cursor-pointer"
+            className="h-14 w-auto cursor-pointer"
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          />
+          <img
+            draggable={false}
+            src={bitlogo}
+            alt="BIT Mesra Logo"
+            className="md:h-10 h-8 md:ml-0 -ml-32 w-auto cursor-pointer"
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           />
           <div className="md:hidden">
@@ -34,23 +42,23 @@ const Navbar = () => {
             )}
           </div>
           
-          <div className="hidden md:flex items-center space-x-8 ml-auto">
-            <Link to="about" smooth={true} duration={500} offset={-100} className="cursor-pointer text-primaryText hover:text-primaryGreen transition font-medium">
+          <div className="hidden md:flex items-center lg:space-x-8 space-x-3 ml-auto">
+            <Link to="about" smooth={true} duration={500} offset={-100} className="cursor-pointer text-primaryText text-xl hover:text-primaryGreen transition font-medium">
               About
             </Link>
-            <Link to="events" smooth={true} duration={500} offset={-100} className="cursor-pointer text-primaryText hover:text-primaryGreen transition font-medium">
+            <Link to="events" smooth={true} duration={500} offset={-100} className="cursor-pointer text-primaryText text-xl hover:text-primaryGreen transition font-medium">
               Events
             </Link>
-            <Link to="speakers" smooth={true} duration={500} offset={-100} className="cursor-pointer text-primaryText hover:text-primaryGreen transition font-medium">
+            <Link to="speakers" smooth={true} duration={500} offset={-100} className="cursor-pointer text-primaryText text-xl hover:text-primaryGreen transition font-medium">
               Speakers
             </Link>
-            <Link to="sponsors" smooth={true} duration={500} offset={-100} className="cursor-pointer text-primaryText hover:text-primaryGreen transition font-medium">
+            <Link to="sponsors" smooth={true} duration={500} offset={-100} className="cursor-pointer text-primaryText text-xl hover:text-primaryGreen transition font-medium">
               Sponsors
             </Link>
-            <Link to="faq" smooth={true} duration={500} offset={-100} className="cursor-pointer text-primaryText hover:text-primaryGreen transition font-medium">
+            <Link to="faq" smooth={true} duration={500} offset={-100} className="cursor-pointer text-primaryText text-xl hover:text-primaryGreen transition font-medium">
               FAQ
             </Link>
-            <Link to="contact" smooth={true} duration={500} offset={-100} className="cursor-pointer text-primaryText hover:text-primaryGreen transition font-medium">
+            <Link to="contact" smooth={true} duration={500} offset={-100} className="cursor-pointer text-primaryText text-xl hover:text-primaryGreen transition font-medium">
               Contact
             </Link>
           </div>
@@ -60,22 +68,22 @@ const Navbar = () => {
             menuOpen ? "max-h-96 py-4 opacity-100" : "max-h-0 py-0 opacity-0"
           } space-y-6 text-lg`}
         >
-          <Link to="about" smooth={true} duration={500} offset={-100} className="cursor-pointer text-primaryText hover:text-primaryGreen transition font-medium">
+          <Link to="about" smooth={true} duration={500} offset={-100} className="cursor-pointer text-primaryText text-xl hover:text-primaryGreen transition font-medium">
             About
           </Link>
-          <Link to="events" smooth={true} duration={500} offset={-100} className="cursor-pointer text-primaryText hover:text-primaryGreen transition font-medium">
+          <Link to="events" smooth={true} duration={500} offset={-100} className="cursor-pointer text-primaryText text-xl hover:text-primaryGreen transition font-medium">
             Events
           </Link>
-          <Link to="speakers" smooth={true} duration={500} offset={-100} className="cursor-pointer text-primaryText hover:text-primaryGreen transition font-medium">
+          <Link to="speakers" smooth={true} duration={500} offset={-100} className="cursor-pointer text-primaryText text-xl hover:text-primaryGreen transition font-medium">
             Speakers
           </Link>
-          <Link to="sponsors" smooth={true} duration={500} offset={-100} className="cursor-pointer text-primaryText hover:text-primaryGreen transition font-medium">
+          <Link to="sponsors" smooth={true} duration={500} offset={-100} className="cursor-pointer text-primaryText text-xl hover:text-primaryGreen transition font-medium">
             Sponsors
           </Link>
-          <Link to="faq" smooth={true} duration={500} offset={-100} className="cursor-pointer text-primaryText hover:text-primaryGreen transition font-medium">
+          <Link to="faq" smooth={true} duration={500} offset={-100} className="cursor-pointer text-primaryText text-xl hover:text-primaryGreen transition font-medium">
             FAQ
           </Link>
-          <Link to="contact" smooth={true} duration={500} offset={-100} className="cursor-pointer text-primaryText hover:text-primaryGreen transition font-medium">
+          <Link to="contact" smooth={true} duration={500} offset={-100} className="cursor-pointer text-primaryText text-xl hover:text-primaryGreen transition font-medium">
             Contact
           </Link>
         </div>
