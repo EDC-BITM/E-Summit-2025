@@ -2,15 +2,15 @@ import React, { useMemo } from "react"
 import img1 from "./Sponser/ccl.jpg"
 import img2 from "./Sponser/hiralal.jpg"
 import img3 from "./Sponser/bharatversity.png"
-import img4 from "./Sponser/acs.jpeg"
-import img5 from "./Sponser/mimicon.png"
-import img6 from "./Sponser/piyush.png"
-import img7 from "./Sponser/campusexpress.jpeg"
-import img8 from "./Sponser/startupjhk.png"
-import img9 from "./Sponser/maruti.png"
-import img10 from "./Sponser/hyundai.png"
-import img11 from "./Sponser/dominos.jpg"
-import img12 from "./Sponser/skoda.jpg"
+import img4 from "./Sponser/skoda.jpg"
+import img5 from "./Sponser/acs.jpeg"
+import img6 from "./Sponser/mimicon.png"
+import img7 from "./Sponser/piyush.png"
+import img8 from "./Sponser/campusexpress.jpeg"
+import img9 from "./Sponser/startupjhk.png"
+import img10 from "./Sponser/maruti.png"
+import img11 from "./Sponser/hyundai.png"
+import img12 from "./Sponser/dominos.jpg"
 import img13 from "./Sponser/isteve.jpg"
 
 function SponsorshipSection() {
@@ -19,6 +19,7 @@ function SponsorshipSection() {
     "Title Sponsor",
     "Prime Partner",
     "Powered By",
+    "Presented By",
     "Food Partner",
     "Anime Partner",
     "Education Partner",
@@ -27,7 +28,6 @@ function SponsorshipSection() {
     "Mobility Partner",
     "Automobile Partner",
     "Pizza Partner",
-    "Presented By",
     "Supporting Partner",
   ]
 
@@ -47,11 +47,6 @@ function SponsorshipSection() {
           }
           .animate-infinite-slide-left {
             animation: slide-left 20s linear infinite;
-          }
-          
-          .sponsor-title {
-            font-family: 'Open Sans', sans-serif;
-            font-weight: 700;
           }
         `}</style>
         <div
@@ -82,10 +77,9 @@ function SponsorshipSection() {
         </div>
       </div>
     )
-  }, [sponsorImages]) // Added sponsorImages as a dependency
+  }, [sponsorImages])
 
   return currentsponsors
 }
 
 export default SponsorshipSection
-
