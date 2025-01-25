@@ -11,10 +11,11 @@ import img9 from "./Sponser/startupjhk.png"
 import img10 from "./Sponser/maruti.png"
 import img11 from "./Sponser/hyundai.png"
 import img12 from "./Sponser/dominos.jpg"
-import img13 from "./Sponser/isteve.jpg"
+import img13 from "./Sponser/isteve.png"
+import img14 from "./Sponser/spartan.jpeg"
 
 function SponsorshipSection() {
-  const sponsorImages = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13]
+  const sponsorImages = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14]
   const sponsorTitles = [
     "Title Sponsor",
     "Prime Partner",
@@ -29,6 +30,7 @@ function SponsorshipSection() {
     "Automobile Partner",
     "Pizza Partner",
     "Supporting Partner",
+    "Fitness Partner",
   ]
 
   const currentsponsors = useMemo(() => {

@@ -12,6 +12,7 @@ const Navbar = () => {
     return (
       <nav className="fixed top-0 left-0 right-0 bg-black shadow-sm z-50">
         <div className="container mx-auto flex items-center justify-between py-4 px-3 xl:px-2">
+          <div className="flex items-center justify-between">
           <img
             draggable={false}
             src={logo}
@@ -23,21 +24,21 @@ const Navbar = () => {
             draggable={false}
             src={bitlogo}
             alt="BIT Mesra Logo"
-            className="md:h-10 h-8 md:ml-0 -ml-32 w-auto cursor-pointer"
+            className="md:h-10 h-8 w-auto cursor-pointer"
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          />
+          /></div>
           <div className="md:hidden">
             {menuOpen ? (
               <ImCross
                 onClick={() => setMenuOpen(false)}
                 className="transition-transform duration-300 text-primaryText cursor-pointer"
-                size={24}
+                size={36}
               />
             ) : (
               <GiHamburgerMenu
                 onClick={() => setMenuOpen(true)}
                 className="transition-transform duration-300 text-primaryText cursor-pointer"
-                size={24}
+                size={36}
               />
             )}
           </div>
