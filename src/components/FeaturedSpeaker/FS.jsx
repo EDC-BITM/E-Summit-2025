@@ -39,7 +39,7 @@ const FeaturedSpeakers = () => {
       },
       {
         name: "Ashutosh Naik",
-        role: "Chief Customer Officer (CCO) at Groww",
+        role: "Chief Compliance Officer (CCO) at Groww",
         img: Ashutosh,
         instagram: "",
         linkedin: "https://in.linkedin.com/in/ashutosh-naik-187a8b2a",
