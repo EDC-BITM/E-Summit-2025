@@ -66,7 +66,7 @@ const FeaturedSpeakers = () => {
   );
 
   return (
-    <section className="speakers w-full relative mx-auto md:pb-40 pb-20 ">
+    <section className="speakers w-full relative mx-auto pb-3">
       <div className="absolute top-0 left-0 w-[200px] h-[400px] md:w-[600px] md:h-[600px] bg-green-500/30 rounded-full blur-3xl" />
       <div data-aos="fade-down" data-aos-duration="1000" className="text-center mb-16">
         <h1 className="font-semibold md:text-5xl text-3xl text-white">
@@ -79,11 +79,11 @@ const FeaturedSpeakers = () => {
           {speakersData.map((speaker, index) => (
             <div key={index} data-aos="flip-left" className="text-white shadow-md rounded-lg mb-28">
               <img src={speaker.img} className="w-full max-w-64 h-80 rounded-t-lg" />
-              <div className="absolute left-0 p-4 w-full h-32 bg-black rounded-b-lg">
+              <div className="absolute left-0 p-4 w-full h-32 bg-primaryGrey rounded-b-lg">
                 <div className="space-y-1">
                     <h1 className="text-xl font-semibold">{speaker.name}</h1>
                     <h6 className="text-primaryGreen text-sm">{speaker.role}</h6>
-                      <h6 className="pb-2">{speaker.desc}</h6>
+                      <h6 className="pb-1">{speaker.desc}</h6>
                     <div className="flex flex-row justify-start items-start gap-4">
                       <a href={speaker.instagram} target="_blank" rel="noreferrer">
                         <FaInstagram />
