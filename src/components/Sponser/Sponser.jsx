@@ -11,9 +11,9 @@ function PastSponsors() {
           <h1 className="font-semibold md:text-5xl text-3xl text-white">
             Past Sponsors
           </h1>
-          <div className="h-1 w-36 bg-primaryGreen rounded-md md:mb-16 mb-8"></div>
+          <div className="h-1 w-36 bg-primaryGreen rounded-md md:mb-10 mb-8"></div>
         </div>
-        <div data-aos="fade-down" data-aos-duration="1000" className='flex overflow-hidden md:my-10'>
+        <div data-aos="fade-down" data-aos-duration="1000" className='flex overflow-hidden md:my-5'>
           <div className='slide flex animate-infinte-slide shrink-0 whitespace-nowrap gap-12 mx-2'>
             <div className='h-40 w-40 flex justify-center items-center bg-white rounded'>
               <img src="https://www.wowdetailingstudio.com/assets/images/logo/logo.png" />
