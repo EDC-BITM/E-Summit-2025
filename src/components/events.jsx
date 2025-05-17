@@ -31,6 +31,12 @@ const EventSchedule = () => {
                 link: 'https://forms.gle/fER7v8KXxSxPMpgq8',
             },
             {
+                time: '11:00 AM - 12:00 PM',
+                title: 'E-Film Festival',
+                location: 'Lecture Hall 1',
+                link: 'https://forms.gle/yYHTzuysABDDMaSS9',
+            },
+            {
                 time: '12:00 PM - 5:00 PM',
                 title: 'IPL Auction',
                 location: 'Lecture Hall 1',
@@ -67,6 +73,12 @@ const EventSchedule = () => {
                 title: 'IPL Auction Finals',
                 location: 'Lecture Hall 1',
                 link: 'https://forms.gle/4QcBZ1LR5fSswAoA6',
+            },
+            {
+                time: '11:00 AM - 1:00 PM',
+                title: 'Board Room',
+                location: 'Lecture Hall 2',
+                link: 'https://forms.gle/XhSX5UcfDXuG5G4y6',
             },
             {
                 time: '11:00 AM - 3:00 PM',
