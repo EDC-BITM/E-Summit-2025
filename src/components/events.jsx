@@ -33,7 +33,7 @@ const EventSchedule = () => {
             {
                 time: '11:00 AM - 12:00 PM',
                 title: 'E-Film Festival',
-                location: 'Lecture Hall 1',
+                location: 'Online (Google Meet)',
                 link: 'https://forms.gle/yYHTzuysABDDMaSS9',
             },
             {
@@ -77,7 +77,7 @@ const EventSchedule = () => {
             {
                 time: '11:00 AM - 1:00 PM',
                 title: 'Board Room',
-                location: 'Lecture Hall 2',
+                location: 'Online (Google Meet)',
                 link: 'https://forms.gle/XhSX5UcfDXuG5G4y6',
             },
             {
